@@ -1,10 +1,12 @@
-// code using react
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const ROOT = ReactDOM.createRoot(document.getElementById("root"));
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "this is my react heading",
-);
-root.render(heading);
+const heading1 = React.createElement("h1", {}, " this is heading");
+
+const headingJSX = <h1>This is jsx heading in React!</h1>;
+
+ROOT.render(heading1);
+
+console.log(heading1, headingJSX);
