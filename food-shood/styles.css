@@ -1,0 +1,35 @@
+.root {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+.logo {
+  background: rgb(229, 143, 4);
+  margin: 5px;
+}
+.nav-items {
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.search {
+  padding: 10px;
+}
+.restraunt-card {
+  border: 1px solid black;
+}

@@ -1,0 +1,130 @@
+/* ===== Header Container ===== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 32px;
+  background: #ffffff;
+
+  border-bottom: 1px solid #e9e9eb;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  /* subtle shadow for depth */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Left Section ===== */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* ===== Logo ===== */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease;
+  border-radius: 50%;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Nav Links ===== */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Links */
+.nav-links a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3d4152;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  color: #fc8019;
+}
+
+/* Underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #fc8019;
+  transition: width 0.2s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ===== Cart ===== */
+.cart {
+  font-weight: 600;
+  position: relative;
+}
+
+/* Cart Badge */
+.cart::after {
+  content: "2"; /* dynamic later */
+  position: absolute;
+  top: -6px;
+  right: -10px;
+
+  background: #fc8019;
+  color: #fff;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* ===== Login Button Wrapper ===== */
+/* (works with your LoginButton component) */
+.header > *:last-child {
+  margin-left: 20px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* hide nav for mobile */
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+}
+
+/* ===== Optional Mobile Menu (future ready) ===== */
+/* You can later add hamburger menu here */

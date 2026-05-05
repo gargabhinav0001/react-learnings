@@ -1,0 +1,21 @@
+{
+  "name": "food-shood",
+  "version": "1.0.0",
+  "description": "Food Ordering Applicaiton",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html"
+  },
+  "keywords": [
+    "food",
+    "order",
+    "deliver"
+  ],
+  "author": "ABG",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  }
+}
